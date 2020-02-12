@@ -42,6 +42,8 @@ package() {
 	install -Dm644 ${_game}d.service           "${pkgdir}/usr/lib/systemd/system/${_game}d.service"
 	install -Dm644 ${_game}d-backup.service    "${pkgdir}/usr/lib/systemd/system/${_game}d-backup.service"
 	install -Dm644 ${_game}d-backup.timer      "${pkgdir}/usr/lib/systemd/system/${_game}d-backup.timer"
+    install -Dm644 ${_game}-server-update.service    "${pkgdir}/usr/lib/systemd/system/${_game}-server-update.service"
+	install -Dm644 ${_game}-server-update.timer      "${pkgdir}/usr/lib/systemd/system/${_game}-server-update.timer"
 	install -Dm644 ${_game}_server.${pkgver}.jar "${pkgdir}${_server_root}/${_game}_server.${pkgver}.jar"
 	ln -s "${_game}_server.${pkgver}.jar" "${pkgdir}${_server_root}/${_game}_server.jar"
 
