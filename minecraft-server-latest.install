@@ -26,6 +26,9 @@ post_install() {
 
 post_upgrade() {
 	chown -R ${_user}:${_user} "${_server_root}"
+	minecraftd command "say Restarting server to install new version in 30 seconds"
+	sleep 20
+	minecraftd restart
 }
 
 post_remove() {
