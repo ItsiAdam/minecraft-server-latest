@@ -22,6 +22,8 @@ install="${pkgname}.install"
 source=("minecraft_server.${pkgver}.jar"::"${sourceUrl}"
     "minecraftd-backup.service"
 	"minecraftd-backup.timer"
+	"minecraft-server-update.service"
+	"minecraft-server-update.timer"
 	"minecraftd.service"
 	"minecraftd.conf"
 	"minecraftd.sh")
@@ -29,6 +31,8 @@ noextract=("minecraft_server.${pkgver}.jar")
 sha512sums=('SKIP'
             'a10e38c0e9a09c25e23e46147a8b8ce4d88a62ee780c1c0b525b9e41a563c4a4ed8e94d851abc3936bc31f3faa916ef005543129a039f66878b8f2c34853b91d'
             '19ee3646bfbace353b65c0373594edb654de11c9671f29cebad3b31109f29f94ade1d529d9f409b0989c376bef9b451585b22a1e0ac4295fcc92d9565f808418'
+            'SKIP'
+            'SKIP'
             '5203f6331f740ecfcea2a2cc653603ae97419baa89e08512f9d8feb63e4a52978442a69b313eccd9037b676a62ab528e2b533c0fb95a9c7177318279fe0cde79'
             'b7e84172bdb791e3a065b2593e63f3f4a017481d4321d28cdc528f88447f9c591a9ac58ccec828e76cb4ec3eacfa0acd8e3645f82e6065f80e4fec06cead67d9'
             'a1022e06a3d8567b31c9670b817a4751ad9f14242ce7ee69f184a459c667ec2334dcd259410de38fc75a0f9a65c0a033d737cf0b73abcf37f5de073db9560035')
