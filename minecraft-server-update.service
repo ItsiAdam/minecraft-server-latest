@@ -1,0 +1,12 @@
+[Unit]
+Description=Minecraft Server Update
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/makepkg -sif --noconfirm --needed
+WorkingDirectory=/home/admin/minecraft-server-latest
+User=admin
+
+[Install]
+WantedBy=multi-user.target
